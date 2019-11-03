@@ -12,15 +12,12 @@
 <body>
     <div id="d1">c</div>
     <script>
-        let t = true
+        let t =60
         setInterval(() => {
-            t = !t
-            if (t) {
-                document.getElementById("d1").innerHTML = "c2"
-                
-            } else {
-                document.getElementById("d1").innerHTML = "c1"
-            }
+
+            document.getElementById("d1").innerHTML = t-- + "s"
+
+
         }, 1000);
     </script>
 </body>
